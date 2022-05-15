@@ -1,0 +1,22 @@
+{
+  "name": "fundamentos-typescript-platzi",
+  "version": "1.0.0",
+  "description": "Curso de Fundamentos de TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayroback/Fundamentos-TypeScript-Platzi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayroback/Fundamentos-TypeScript-Platzi/issues"
+  },
+  "homepage": "https://github.com/sayroback/Fundamentos-TypeScript-Platzi#readme",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}
