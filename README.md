@@ -31,3 +31,57 @@ Con todo esto podríamos transpilar todos los archivos y enviarlos a una carpeta
 ### Veamos el TSConfig.json (6/25)
 
 Para generar un archivo TSConfig.json usamos el comando `npx tsc --init`.
+
+## Tipos de datos primitivos
+
+### Qué es el tipado en TypeScript (7/24)
+
+Se agrega el type annotation con `: number` siendo number el tipo de dato que establecemos.
+Sintaxis: `const product: number = 12;`
+Es recomendado declarar el tipo siembre con minúsculas, aunque se puede hacer con la primer letra mayúscula, esto puede generar errores.
+
+### Tipos inferidos (8/24)
+
+TypeScript también puede inferir tipos de datos.
+Ademas reconoce cuando declaras la misma variable aun cuando este en diferentes archivos, si quieres trabajar con el mismo nombre puedes envolver el código en una función anónima que se ejecuta justo después.
+`(()=> {})();`
+
+### Numbers (9/24)
+
+Si no inicializas la variable al declararla si debes declarar el tipo de dato, de lo contrario TS no puede inferir. Haciendo esto TS podría alertarnos si es que estamos llamando una variable sin inicializar.
+
+### Booleans (10/24)
+
+No se puede inicializar un booleano como null.
+El alcance de la inferencia de TS en en toda asignación no solo en la declaración o inicialización.
+
+### Strings (11/24)
+
+Es recomendable envolver los strings con comillas dobles para evitar un error en el cual el dato asignado posea una comilla simple por ejemplo: I'm.
+
+Back tick’s:
+Son muy útiles para guardar bloques de texto y concatenar variables.
+
+### Arrays (12/24)
+
+TS infiere el tipo de datos que se encuentran inicializados en el array, pero si después agregaras otro tipo de dato debes declararlo.
+
+`let mixed: (number | string | boolean | Object)[];`
+
+## Tipos de datos especiales
+
+### Any (13/24)
+
+Con any declarar que pude ser cualquier tipo de dato, quitas la inferencia de las variables. Esto no es recomendado pero es util si es que estas migrando un proyecto en el cuan aun no implementas por completo TS y surgen errores difíciles de complicados de corregir.
+Si al traer una variable any ahora queremos asignar un tipo lo declaramos asi:
+<code>let myDynamicVar: any;
+myDynamicVar = 'Hola';
+const rta = (myDynamicVar as string).toLowerCase();</code>
+
+También se puede declarar:
+`const rta2 = (<number>myDynamicVar).toFixed();`
+
+### Union Types (14/24)
+
+Añade flexibilidad al tipo de dato. Por ejemplo:
+`let userId: string | number;`
