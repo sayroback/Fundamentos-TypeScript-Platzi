@@ -104,3 +104,9 @@ Podemos forzar que una variable se inicialice en alguno de esos datos y que desp
 `let myNumber: number | null = null;`
 Podemos validar muy fácil una variable que puede o no ser nula o indefinida.
 `hello += name?.toLowerCase() || 'nobody';`
+
+### Funciones (17/24)
+
+La fecha de puede definir como de tipo Date (con la primer letra mayúscula).
+Si queremos volver opcional el que una función reciba un dato se declara con un signo de interrogación antes de los dos puntos. Por ejemplo:
+`size?: Sizes`
