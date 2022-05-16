@@ -1,4 +1,4 @@
-# Curso de Fundamentos de TypeScript
+# Curso de TypeScript - Platzi
 
 Descripción por Platzi:
 [¡Aprende TypeScript](https://platzi.com/cursos/typescript/), el superset de Microsoft para agregar tipado fuerte a tu código JavaScript! Conoce los datos primitivos y especiales del lenguaje para programar aplicaciones web, agilizar su mantenimiento y evitar la mayoría de errores. Descubre los fundamentos de TypeScript con tu profesor Nicolas Molina.
