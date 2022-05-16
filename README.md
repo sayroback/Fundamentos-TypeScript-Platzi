@@ -85,3 +85,22 @@ También se puede declarar:
 
 Añade flexibilidad al tipo de dato. Por ejemplo:
 `let userId: string | number;`
+Si creamos un condicional que compruebe el tipo de dato que se asigno al escribir nosotros la condición de un tipo de dato TS reconoce que en ese momento deberá ser uno de esos tipo y recomendara según el tipo.
+
+### Alias y tipos literales (15/24)
+
+Podemos crear nuestros propios tipos:
+`type UserID = string | number;`
+
+También podemos crear conjuntos de datos permitidos.
+<code>
+type Sizes = 'S' | 'M' | 'L' | 'XL';
+let shirtSize: Sizes;
+</code>
+
+### Null y Undefined (16/24)
+
+Podemos forzar que una variable se inicialice en alguno de esos datos y que después acepte otro tipo de dato. Por ejemplo:
+`let myNumber: number | null = null;`
+Podemos validar muy fácil una variable que puede o no ser nula o indefinida.
+`hello += name?.toLowerCase() || 'nobody';`
