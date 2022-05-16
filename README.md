@@ -8,6 +8,8 @@ Descripción por Platzi:
 - Integra librerías con o sin soporte de TypeScript a tu aplicación.
 - Reflexiona: ¿ahora eres TypeScript Developer o JavaScript "Pro" Developer?.
 
+# Mis notas:
+
 ## Introducción a TypeScript
 
 ### Atrapando bugs clase (4/24)
@@ -110,3 +112,5 @@ Podemos validar muy fácil una variable que puede o no ser nula o indefinida.
 La fecha de puede definir como de tipo Date (con la primer letra mayúscula).
 Si queremos volver opcional el que una función reciba un dato se declara con un signo de interrogación antes de los dos puntos. Por ejemplo:
 `size?: Sizes`
+
+### Retorno de funciones (18/24)
